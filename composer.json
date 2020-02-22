@@ -1,0 +1,22 @@
+{
+    "name": "irfa/encrypt-file-laravel",
+    "description": "\"Encrypt & decrypt uploaded file for Laravel\"",
+    "type": "package",
+    "license": "MIT",
+    "version": "v1.0",
+    "keywords": ["laravel", "security", "encrypt", "decrypt", "secure","upload file"],
+    "authors": [
+        {
+            "name": "Irfa A",
+            "email": "irfa.backend@protonmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "autoload": {
+            "psr-4": {
+                "Irfa\\FileSafe\\": "src/"
+            }
+    }
+}
