@@ -3,7 +3,7 @@
 
 		'random_filename' => true,//Generate random alnum for upload filename,
 
-		'path' => 'uploaded/',//Location uploaded file storage/app,
+		'path' => 'uploaded/',//Uploaded file is located in storage/app.
 
 
 
