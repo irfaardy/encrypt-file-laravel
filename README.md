@@ -1,4 +1,5 @@
 
+
 # 🚀Simple Laravel Encrypt Upload File
 [![GitHub license](https://img.shields.io/github/license/irfaardy/encrypt-file-laravel?style=flat-square)](https://github.com/irfaardy/encrypt-file-laravel/blob/master/LICENSE) [![Support me](https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-yellow.svg?style=flat-square)](https://www.buymeacoffee.com/OBaAofN)
 
@@ -79,9 +80,23 @@
        
         public function upload_file(Request $request)
         {
-           $file = 'encrypted_file.doc';
+           $file = 'encrypted_file.txt';
            return FileSafe::download($file);
-    //This is to decrypt files to be downloaded.
+		    //decrypt files to be downloaded.
         }
     }
 
+<h3>View Raw File</h3>
+
+    ...
+	    $file = 'encrypt_file.txt';
+	    return FileSafe::file($file)->raw();
+	...
+
+<h2>Contribution</h2>
+ENG:<br>
+If you want to contribute this project and make it better, your help is very welcome.<br>
+IDN:<br>
+Jika Anda ingin berkontribusi dalam proyek ini dan menjadikannya lebih baik, bantuan Anda sangat kami harapkan.
+
+***
