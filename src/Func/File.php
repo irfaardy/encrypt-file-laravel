@@ -13,6 +13,9 @@ class File extends CryptFile
 	protected static function download_file($file){
 		return CryptFile::decrypt($file);
 	}
+	protected static function view_raw($file){
+		return CryptFile::decrypt($file,true);
+	}
 
 
 }

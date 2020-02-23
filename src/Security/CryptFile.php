@@ -20,13 +20,18 @@ class CryptFile extends File
 		
 	}
 
-	protected static function decrypt($file){
+	protected static function decrypt($file,$raw=false){
 		$fl = self::get_file($file);
 		$decryptedContent = Crypt::decrypt($fl);
+		if($raw){
+			$raw = $decryptedContent;
+			return $raw;
+		} else{
 
-		return response()->streamDownload(function() use ($decryptedContent) {
-		    echo $decryptedContent;
-		}, $file);
+			return response()->streamDownload(function() use ($decryptedContent) {
+					    echo $decryptedContent;
+					}, $file);
+		}
 	}
 	private static function GenerateFileName(){
 		if(config("irfa.filesafe.random_filename")){
