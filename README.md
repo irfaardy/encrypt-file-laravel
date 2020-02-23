@@ -47,6 +47,7 @@
     
     namespace App\Http\Controllers;
     
+    use Filesafe;
     use Illuminate\Http\Request;
     use App\Http\Controllers\Controller;
     
@@ -57,7 +58,8 @@
         {
            $file = $request->file('file');
            FileSafe::store($file);
-    //
+    //This is to encrypt the file before it is uploaded to the server.
+
         }
     }
 
@@ -68,6 +70,7 @@
     
     namespace App\Http\Controllers;
     
+    use FileSafe;
     use Illuminate\Http\Request;
     use App\Http\Controllers\Controller;
     
@@ -76,9 +79,9 @@
        
         public function upload_file(Request $request)
         {
-           $file = 'images.jpg';
+           $file = 'encrypted_file.doc';
            return FileSafe::download($file);
-    //
+    //This is to decrypt files to be downloaded.
         }
     }
 
