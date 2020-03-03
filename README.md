@@ -82,7 +82,7 @@
         {
            $file = 'encrypted_file.txt';
            return FileSafe::download($file);
-		    //decrypt files to be downloaded.
+		    //decrypt file to be downloaded.
         }
     }
 
