@@ -1,7 +1,7 @@
 
 
 # 🛡️Simple Laravel Encrypt Upload File
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/irfaardy/encrypt-file-laravel/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/encrypt-file-laravel/?branch=master) [![GitHub license](https://img.shields.io/github/license/irfaardy/encrypt-file-laravel?style=flat-square)](https://github.com/irfaardy/encrypt-file-laravel/blob/master/LICENSE) [![Support me](https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-yellow.svg?style=flat-square)](https://www.buymeacoffee.com/OBaAofN)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/irfaardy/encrypt-file-laravel/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/encrypt-file-laravel/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/irfaardy/encrypt-file-laravel/badges/build.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/encrypt-file-laravel/build-status/master) [![GitHub license](https://img.shields.io/github/license/irfaardy/encrypt-file-laravel?style=flat-square)](https://github.com/irfaardy/encrypt-file-laravel/blob/master/LICENSE) [![Support me](https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-yellow.svg?style=flat-square)](https://www.buymeacoffee.com/OBaAofN)
 
 <p>The Simple Laravel Encrypt Upload File uses the default encryption of Laravel which is implemented in upload file.<p>
 <h3>🛠️ Installation with Composer </h3>
