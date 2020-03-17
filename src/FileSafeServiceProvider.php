@@ -25,7 +25,7 @@ class FileSafeServiceProvider extends ServiceProvider
 	{
         
 		$this->publishes([
-		__DIR__.'/../config/irfa/' => config_path('irfa')],'file-safe');
+		__DIR__.'/../config/irfa/' => config_path('irfa') ], 'file-safe');
        
         
 	}
