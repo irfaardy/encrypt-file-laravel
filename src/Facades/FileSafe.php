@@ -8,13 +8,13 @@ use Illuminate\Support\Facades\Facade;
 
 class FileSafe extends Facade
 {
-    /**
-     * Get the registered name of the component.
-     *
-     * @return string
-     */
-    protected static function getFacadeAccessor()
-    {
-        return \Irfa\FileSafe\Func\FileSafe::class;
-    }
+	/**
+	 * Get the registered name of the component.
+	 *
+	 * @return string
+	 */
+	protected static function getFacadeAccessor()
+	{
+		return \Irfa\FileSafe\Func\FileSafe::class;
+	}
 }

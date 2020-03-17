@@ -29,7 +29,7 @@ class CryptFile extends File
 		} else{
 
 			return response()->streamDownload(function() use ($decryptedContent) {
-					    echo $decryptedContent;
+						echo $decryptedContent;
 					}, $file);
 		}
 	}
