@@ -1,12 +1,14 @@
-
-
 # 🛡️Simple Laravel Encrypt Upload File
+
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/irfaardy/encrypt-file-laravel/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/encrypt-file-laravel/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/irfaardy/encrypt-file-laravel/badges/build.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/encrypt-file-laravel/build-status/master) [![Latest Stable Version](https://poser.pugx.org/irfa/encrypt-file-laravel/v/stable)](https://packagist.org/packages/irfa/encrypt-file-laravel)  [![GitHub license](https://img.shields.io/github/license/irfaardy/encrypt-file-laravel?style=flat-square)](https://github.com/irfaardy/encrypt-file-laravel/blob/master/LICENSE) [![Support me](https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-yellow.svg?style=flat-square)](https://www.buymeacoffee.com/OBaAofN)
 
 <p>The Simple Laravel Encrypt Upload File uses the default encryption of Laravel which is implemented in upload file.<p>
 <h3>🛠️ Installation with Composer </h3>
 
-    composer require irfa/encrypt-file-laravel
+
+```php
+composer require irfa/encrypt-file-laravel
+```
 
 >You can get Composer [ here]( https://getcomposer.org/download/)
 
@@ -17,20 +19,24 @@
 
 <h3>Add to config/app.php</h3>
 
-    'providers' => [
-        ....
-        Irfa\FileSafe\FileSafeServiceProvider::class,
-         ];
+```php
+'providers' => [
+    ....
+    Irfa\FileSafe\FileSafeServiceProvider::class,
+     ];
+```
 
 
 
 <h3>Add to config/app.php</h3>
 
-    'aliases' => [
-             ....
-      'FileSafe' => Irfa\FileSafe\Facades\FileSafe::class,
-    
-        ],
+```php
+'aliases' => [
+         ....
+  'FileSafe' => Irfa\FileSafe\Facades\FileSafe::class,
+
+    ],
+```
 
   <h2>Publish Vendor</h2>
 
@@ -44,59 +50,51 @@
 <h2>Example store file</h2>
 
 
-    <?php
-    
-    namespace App\Http\Controllers;
-    
-    use Filesafe;
-    use Illuminate\Http\Request;
-    use App\Http\Controllers\Controller;
-    
-    class FileController extends Controller
-    {
-       
-        public function upload_file(Request $request)
-        {
-           $file = $request->file('file');
-           FileSafe::store($file);
-    //This is to encrypt the file before it is uploaded to the server.
+```php
+<?php
 
-        }
+namespace App\Http\Controllers;
+
+use Filesafe;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+class FileController extends Controller
+{
+   
+    public function upload_file(Request $request)
+    {
+       $file = $request->file('file');
+       FileSafe::store($file);
+       //This is to encrypt the file before it is uploaded to the server.
+
     }
+}
+```
 
 <h2>Example download file</h2>
 
 
-    <?php
-    
-    namespace App\Http\Controllers;
-    
-    use FileSafe;
-    use Illuminate\Http\Request;
-    use App\Http\Controllers\Controller;
-    
-    class FileController extends Controller
-    {
-       
-        public function upload_file(Request $request)
-        {
-           $file = 'encrypted_file.txt';
-           return FileSafe::download($file);
-		    //decrypt file to be downloaded.
-        }
-    }
+```php
+...  
+	   $file = 'path/to/encrypted_file.txt';
+       return FileSafe::download($file);
+	    //decrypt file to be downloaded.
+...
+```
 
 <h3>View Raw File</h3>
 
-    ...
-	    $file = 'encrypt_file.txt';
-	    return FileSafe::file($file)->raw();
-	...
+```php
+...
+    $file = 'encrypt_file.txt';
+    return FileSafe::file($file)->raw();
+...
+```
 
 <h2>Contribution</h2>
+
 ENG:<br>
 If you want to contribute this project and make it better, your help is very welcome.<br>
 IDN:<br>
 Jika Anda ingin berkontribusi dalam proyek ini dan menjadikannya lebih baik, bantuan Anda sangat kami harapkan.
-
-***
