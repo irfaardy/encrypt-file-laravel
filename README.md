@@ -1,4 +1,4 @@
-# 🛡️Simple Laravel Encrypt Upload File
+# 🛡️Laravel Encrypt Upload File
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/irfaardy/encrypt-file-laravel/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/encrypt-file-laravel/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/irfaardy/encrypt-file-laravel/badges/build.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/encrypt-file-laravel/build-status/master) [![Latest Stable Version](https://poser.pugx.org/irfa/encrypt-file-laravel/v/stable)](https://packagist.org/packages/irfa/encrypt-file-laravel)  [![GitHub license](https://img.shields.io/github/license/irfaardy/encrypt-file-laravel?style=flat-square)](https://github.com/irfaardy/encrypt-file-laravel/blob/master/LICENSE) [![Support me](https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-yellow.svg?style=flat-square)](https://www.buymeacoffee.com/OBaAofN)
 
